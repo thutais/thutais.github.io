@@ -11,6 +11,7 @@ title: TAIS Official Website
 tagline: ""
 description: ""
 url: https://thutais.github.io/
+baseurl: ""
 
 author:
   name: "Juliana Banos"
