@@ -99,6 +99,34 @@ a.sidebar-nav-item:focus {
   font-weight: bold;
 }
 
+.small-text {
+  font-size: 14px; /* Change this value to your desired smaller font size */
+}
+
+.medium-text {
+  font-size:20px; /* Change this value to your desired smaller font size */
+}
+
+/* Small title */
+.small-title {
+  font-size: 25px; /* Change this value to your desired smaller font size */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.small-title img {
+  display: block;
+  margin-bottom: 0.5rem; /* Adjust the spacing between the logo and the title */
+}
+
+a {
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Vertically align items */
+}
+
 /* Sticky sidebar
  *
  * Add the `sidebar-sticky` class to the sidebar's container to affix it the
@@ -247,4 +275,13 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
+}
+
+/* Purple */
+.theme-base-thu .sidebar {
+  background-color: #601b74;
+}
+.theme-base-0e .content a,
+.theme-base-0e .related-posts li a:hover {
+  color: #601b74;
 }
