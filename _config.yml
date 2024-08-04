@@ -22,7 +22,7 @@ author:
   name: "Juliana Banos"
 
 paginate: 2
-paginate_path: "/archive/page:num/"
+paginate_path: "/news/page:num/"
 
 github:
   repo: https://github.com/thutais/thutais.github.io

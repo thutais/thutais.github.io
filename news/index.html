@@ -1,15 +1,13 @@
 ---
 layout: default
-title: Archive
-pagination:
-  enabled: true
+title: News
 ---
 
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">
-      <a href="{{ post.url }}">
+      <a href="{{ post.url | relative_url }}">
         {{ post.title }}
       </a>
     </h1>
@@ -23,15 +21,15 @@ pagination:
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ '/archive.html' | relative_url }}page{{paginator.next_page}}">Older</a>
+    <a class="pagination-item older" href="{{ '/news/page' | relative_url }}{{paginator.next_page}}">Older</a>
   {% else %}
     <span class="pagination-item older">Older</span>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ '/archive.html' | relative_url }}">Newer</a>
+      <a class="pagination-item newer" href="{{ '/news/' | relative_url }}">Newer</a>
     {% else %}
-      <a class="pagination-item newer" href="{{ '/archive.html' | relative_url }}page{{paginator.previous_page}}">Newer</a>
+      <a class="pagination-item newer" href="{{ '/news/page' | relative_url }}page{{paginator.previous_page}}">Newer</a>
     {% endif %}
   {% else %}
     <span class="pagination-item newer">Newer</span>
